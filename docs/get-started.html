@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xray_OS Documentation</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-['Inter'] overflow-x-hidden">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black/95 backdrop-blur-md z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-8 py-4 flex justify-between items-center">
+            <div class="flex items-baseline gap-2">
+                <a href="index.html" class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Xray_OS</a>
+                <span class="text-gray-400 font-light">Linux</span>
+            </div>
+            <ul class="flex gap-8 list-none">
+                <li><a href="index.html" class="text-white hover:text-cyan-400 transition-colors duration-300">Home</a></li>
+                <li><a href="index.html#features" class="text-white hover:text-cyan-400 transition-colors duration-300">Features</a></li>
+                <li><a href="index.html#download" class="text-white hover:text-cyan-400 transition-colors duration-300">Download</a></li>
+
+                <li><a href="#community" class="text-white hover:text-cyan-400 transition-colors duration-300">Community</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Documentation Section -->
+    <section class="min-h-screen py-32 bg-gradient-to-br from-slate-800/20 via-black to-black relative overflow-hidden">
+        <!-- Animated gradient orbs -->
+        <div class="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-cyan-400/40 to-blue-400/40 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-purple-400/35 to-pink-400/35 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-gradient-to-r from-indigo-400/25 to-cyan-400/25 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+        <div class="absolute top-10 right-1/3 w-64 h-64 bg-gradient-to-r from-blue-300/30 to-teal-300/30 rounded-full blur-2xl animate-pulse" style="animation-delay: 0.5s;"></div>
+        <div class="absolute bottom-1/3 left-1/4 w-72 h-72 bg-gradient-to-r from-violet-400/20 to-purple-400/20 rounded-full blur-3xl animate-pulse" style="animation-delay: 1.5s;"></div>
+        
+        <div class="max-w-6xl mx-auto px-8 relative z-10">
+            <h2 class="text-center text-5xl font-bold mb-16 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Xray_OS - Guide to get started</h2>
+            
+            <!-- Documentation Content -->
+            <div class="max-w-4xl mx-auto mb-16">
+                <!-- Overview -->
+                <section class="mb-12">
+                    <h3 class="text-3xl font-bold text-white mb-6">Overview</h3>
+                    <div class="bg-blue-500/10 border-l-4 border-blue-400 p-4 rounded-r-lg mb-6">
+                        <p class="text-blue-200 font-medium">📢 The ISO is currently under brief reconstruction. Xray_OS is back!</p>
+                    </div>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-4 text-justify">
+                        Xray_OS is a personal Arch Linux-based distribution created for my personal use - it's not intended as a competitor to other distributions. This is a curated system with custom tools and fixes for specific use cases.
+                    </p>
+                    <div class="bg-amber-500/10 border-l-4 border-amber-400 p-4 rounded-r-lg mb-16">
+                        <p class="text-amber-200 font-medium">📢 From the next version of Tolitica, the Xray_OS branding will become optional.</p>
+                    </div>
+                </section>
+
+                <!-- Installation -->
+                <section class="mb-12 mt-16">
+                    <h3 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+                        <img src="icons/xr-install-icon.png" alt="Installation" style="width: 32px; height: 37px; margin-right: 0.5rem;"> Installation
+                    </h3>
+                    <h4 class="text-xl font-semibold text-cyan-400 mb-4">System Requirements</h4>
+                    <ul class="text-gray-300 mb-6 space-y-2 list-disc list-inside">
+                        <li>64-bit processor (x86_64)</li>
+                        <li>2GB RAM minimum (4GB+ recommended)</li>
+                        <li>20GB free disk space</li>
+                        <li>UEFI or Legacy BIOS support</li>
+                    </ul>
+                    <h4 class="text-xl font-semibold text-cyan-400 mb-4">Download & Setup</h4>
+                    <ol class="text-gray-300 mb-6 space-y-2 list-decimal list-inside">
+                        <li>Download Xray_OS ISO from <a href="https://sourceforge.net/projects/xray-os/" class="text-cyan-400 hover:underline">SourceForge</a></li>
+                        <li>Create bootable USB using Rufus (Windows), Balena Etcher, or Ventoy</li>
+                        <li>Boot from USB and follow the installation wizard</li>
+                        <li>The installer will automatically detect and configure GPU drivers</li>
+                        <li>Reboot and enjoy your new Xray_OS system
+                            <div class="bg-yellow-500/10 border-l-4 border-yellow-400 p-4 rounded-r-lg mt-4 mb-16">
+                                <p class="text-yellow-200 font-medium">⚠️ GPU driver detection feature needs adjustments - use with caution.</p>
+                            </div>
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- Tolito Usage -->
+                <section class="mb-20">
+                    <h3 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+                        <span class="text-4xl" style="margin-right: 0.5rem;">🛠️</span> Tolito AUR Helper
+                    </h3>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                        Tolito is Xray_OS's custom AUR helper that builds and downloads packages from curated PKGBUILDs, with automatic fallback to the standard AUR.
+                    </p>
+                    <h4 class="text-xl font-semibold text-cyan-400 mb-4">Basic Commands</h4>
+                    <div class="bg-gray-900/70 p-6 rounded-lg font-mono text-sm mb-6">
+                        <div class="space-y-4">
+                            <div>
+                                <div class="text-cyan-400 mb-1"># Install a package</div>
+                                <div class="text-white">tolito -S package_name</div>
+                            </div>
+                            <div>
+                                <div class="text-cyan-400 mb-1"># Remove a package</div>
+                                <div class="text-white">tolito -R package_name</div>
+                            </div>
+                            <div>
+                                <div class="text-cyan-400 mb-1"># Query package info</div>
+                                <div class="text-white">tolito -Qi package_name</div>
+                            </div>
+                            <div>
+                                <div class="text-cyan-400 mb-1"># Clean package cache</div>
+                                <div class="text-white">tolito clean</div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="text-xl font-semibold text-cyan-400 mb-4">Key Features</h4>
+                    <ul class="text-gray-300 space-y-2 list-disc list-inside mb-16">
+                        <li>Curated PKGBUILDs that fix broken AUR packages</li>
+                        <li>Easy DaVinci Resolve installation without errors</li>
+                        <li>Automatic fallback to standard AUR</li>
+                        <li>Pacman-compatible syntax</li>
+                    </ul>
+                </section>
+
+                <!-- Tolitica -->
+                <section class="mb-12 mt-24">
+                    <h3 class="text-3xl font-bold text-white mb-6 flex items-center gap-3">
+                        <img src="icons/tolitica.svg" alt="Tolitica" style="width: 32px; height: 32px; margin-right: 0.5rem;"> Tolitica Welcome App
+                    </h3>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                        Tolitica is Xray_OS's custom welcome application that provides easy access to system configuration and essential tools.
+                    </p>
+                    <h4 class="text-xl font-semibold text-cyan-400 mb-4">Features</h4>
+                    <ul class="text-gray-300 mb-6 space-y-2 list-disc list-inside">
+                        <li>• Change shell (bash, fish, zsh)</li>
+                        <li>• Add/Remove gaming packages</li>
+                        <li>• Enable/Disable Flatpak or Snapd</li>
+                        <li>• Mount/Unmount drives</li>
+                        <li>• System configuration shortcuts</li>
+                    </ul>
+                    <h4 class="text-xl font-semibold text-cyan-400 mb-4">Usage</h4>
+                    <div class="bg-gray-900/70 p-4 rounded-lg font-mono text-sm mb-4">
+                        <div class="text-cyan-400 mb-1"># Launch from terminal</div>
+                        <div class="text-white">tolitica</div>
+                    </div>
+                    <p class="text-gray-400 text-sm mb-16">
+                        <strong>Note:</strong> Tolitica automatically launches on first boot (optional).
+                    </p>
+                </section>
+
+                <!-- Unique Features -->
+                <section class="mb-12 mt-16">
+                    <h3 class="text-3xl font-bold text-white mb-6">What Makes Xray_OS Different</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <h4 class="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+                                <span>🎬</span> DaVinci Resolve Support
+                            </h4>
+                            <p class="text-gray-300 text-sm">
+                                Fixed installation and title bar issues that normally occur with AUR packages.
+                            </p>
+                        </div>
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <h4 class="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+                                <span>🖥️</span> Smart GPU Detection
+                            </h4>
+                            <p class="text-gray-300 text-sm">
+                                Automatically detects GPU and removes unused drivers during installation.
+                            </p>
+                        </div>
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <h4 class="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+                                <span>🎨</span> Custom Wallpapers
+                            </h4>
+                            <p class="text-gray-300 text-sm">
+                                Original wallpapers created specifically for Xray_OS.
+                            </p>
+                        </div>
+                        <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                            <h4 class="text-lg font-semibold text-white mb-3 flex items-center gap-2">
+                                <span>📦</span> Curated Packages
+                            </h4>
+                            <p class="text-gray-300 text-sm">
+                                Fixed PKGBUILDs for packages that are broken in standard AUR.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Support -->
+                <section class="mb-12 mt-16">
+                    <h3 class="text-3xl font-bold text-white mb-6">Support & Community</h3>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                        Need help or want to contribute? Here's how to get involved:
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-16">
+                        <a href="https://github.com/Xray-OS/Xray_OS/issues" target="_blank" class="bg-white/5 p-4 rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10">
+                            <h4 class="text-white font-semibold mb-2 flex items-center gap-2">
+                                <span>🐛</span> Report Issues
+                            </h4>
+                            <p class="text-gray-300 text-sm">Found a bug? Report it on GitHub</p>
+                        </a>
+                        <a href="https://discord.com/invite/dBR7wR3ABk" target="_blank" class="bg-white/5 p-4 rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10">
+                            <h4 class="text-white font-semibold mb-2 flex items-center gap-2">
+                                <span>💬</span> Join Discord
+                            </h4>
+                            <p class="text-gray-300 text-sm">Chat with the community</p>
+                        </a>
+                        <a href="https://github.com/Xray-OS/Xray_OS/tree/main" target="_blank" class="bg-white/5 p-4 rounded-lg hover:bg-white/10 transition-all duration-300 border border-white/10">
+                            <h4 class="text-white font-semibold mb-2 flex items-center gap-2">
+                                <span>📚</span> View Source
+                            </h4>
+                            <p class="text-gray-300 text-sm">Browse the code on GitHub</p>
+                        </a>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Quick Access Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+
+                <!-- Tolito -->
+                <a href="https://sourceforge.net/projects/tolito/" target="_blank" class="bg-white/5 p-10 rounded-2xl text-center backdrop-blur-md border border-white/10 hover:scale-105 hover:shadow-[0_20px_60px_rgba(0,212,255,0.2)] hover:border-cyan-400/30 transition-all duration-300 group block">
+                    <div class="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">🛠️</div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Tolito AUR Helper</h3>
+                    <p class="text-gray-300 leading-relaxed mb-4">Custom AUR helper with curated PKGBUILDs and automatic fallback.</p>
+                    <div class="bg-gray-900/50 p-2 rounded text-xs font-mono text-cyan-400">tolito -S package_name</div>
+                </a>
+
+                <!-- Tolitica -->
+                <a href="https://sourceforge.net/projects/tolitica/" target="_blank" class="bg-white/5 p-10 rounded-2xl text-center backdrop-blur-md border border-white/10 hover:scale-105 hover:shadow-[0_20px_60px_rgba(0,212,255,0.2)] hover:border-cyan-400/30 transition-all duration-300 group block">
+                    <div class="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <img src="icons/tolitica.svg" alt="Tolitica" style="width: 50px; height: 50px;" class="mx-auto">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Tolitica Welcome App</h3>
+                    <p class="text-gray-300 leading-relaxed mb-4">System configuration and essential tools access.</p>
+                    <div class="bg-gray-900/50 p-2 rounded text-xs font-mono text-cyan-400">tolitica</div>
+                </a>
+
+                <!-- Custom PKGBUILDs -->
+                <a href="https://gitlab.com/Arch7z/arch7z-pkgbuilds" target="_blank" class="bg-white/5 p-10 rounded-2xl text-center backdrop-blur-md border border-white/10 hover:scale-105 hover:shadow-[0_20px_60px_rgba(0,212,255,0.2)] hover:border-cyan-400/30 transition-all duration-300 group block">
+                    <div class="text-5xl mb-6 group-hover:scale-110 transition-transform duration-300">✨</div>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Custom PKGBUILDs</h3>
+                    <p class="text-gray-300 leading-relaxed mb-4">Davinci-Resolve-Studio available, custom wallpapers, curated PKGBUILDs.</p>
+                    <p class="text-green-300 text-sm">Optimized & Minimal</p>
+                </a>
+
+
+            </div>
+
+            <!-- Detailed Sections -->
+            <div>
+                <!-- Tolito Details -->
+                <div class="bg-white/5 p-12 rounded-2xl backdrop-blur-md border border-white/10">
+                    <h3 class="text-3xl font-bold text-cyan-400 mb-6 flex items-center gap-3">
+                        <span class="text-4xl">🛠️</span> Tolito Commands
+                    </h3>
+                    <div class="bg-gray-900/70 p-6 rounded-lg font-mono text-sm">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <div class="text-cyan-400 mb-2"># Install package</div>
+                                <div class="text-white">tolito -S package_name</div>
+                            </div>
+                            <div>
+                                <div class="text-cyan-400 mb-2"># Remove package</div>
+                                <div class="text-white">tolito -R package_name</div>
+                            </div>
+                            <div>
+                                <div class="text-cyan-400 mb-2"># Query package</div>
+                                <div class="text-white">tolito -Q package_name</div>
+                            </div>
+                            <div>
+                                <div class="text-cyan-400 mb-2"># Clean cache</div>
+                                <div class="text-white">tolito clean</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System Requirements -->
+                <div class="bg-white/5 p-12 rounded-2xl backdrop-blur-md border border-white/10" style="margin-top: 2rem;">
+                    <h3 class="text-3xl font-bold text-cyan-400 mb-6">System Requirements</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xl font-semibold text-white mb-4">Minimum</h4>
+                            <ul class="text-gray-300 space-y-2">
+                                <li>• 64-bit processor (x86_64)</li>
+                                <li>• 2GB RAM</li>
+                                <li>• 20GB disk space</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-semibold text-white mb-4">Recommended</h4>
+                            <ul class="text-gray-300 space-y-2">
+                                <li>• Modern multi-core CPU</li>
+                                <li>• 4GB+ RAM</li>
+                                <li>• 50GB+ SSD storage</li>
+                                <li>• Dedicated GPU</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black border-t border-white/10 py-16">
+        <div class="max-w-6xl mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Xray_OS Linux</h4>
+                    <p class="text-gray-300 leading-relaxed" style="font-style: italic;">It's not a Linux fork. It's the Linux you never expected.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="get-started.html" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Get started</a></li>
+                        <li><a href="https://github.com/Xray-OS/Xray_OS/issues" target="_blank" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Connect</h4>
+                    <ul class="space-y-2">
+                        <li><a href="https://github.com/Xray-OS/Xray_OS/tree/main" target="_blank" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">GitHub</a></li>
+                        <li><a href="https://discord.com/invite/dBR7wR3ABk" target="_blank" class="text-gray-300 hover:text-cyan-400 transition-colors duration-300">Discord</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center pt-8 border-t border-white/10 text-gray-400">
+                <p>&copy; 2023 Xray_OS Linux. Open source and free forever.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xray_OS Installation Guide</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-['Inter']">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black/95 backdrop-blur-md z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-8 py-4 flex justify-between items-center">
+            <div class="flex items-baseline gap-2">
+                <a href="index.html" class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Xray_OS</a>
+                <span class="text-gray-400 font-light">Linux</span>
+            </div>
+            <ul class="flex gap-8 list-none">
+                <li><a href="index.html" class="text-white hover:text-cyan-400 transition-colors duration-300">Home</a></li>
+                <li><a href="index.html#features" class="text-white hover:text-cyan-400 transition-colors duration-300">Features</a></li>
+                <li><a href="index.html#download" class="text-white hover:text-cyan-400 transition-colors duration-300">Download</a></li>
+                <li><a href="docs.html" class="text-cyan-400">Docs</a></li>
+                <li><a href="#community" class="text-white hover:text-cyan-400 transition-colors duration-300">Community</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="min-h-screen pt-24 pb-16 bg-gradient-to-br from-slate-800/20 via-black to-black">
+        <div class="max-w-4xl mx-auto px-8">
+            <h1 class="text-5xl font-bold mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                Installation Guide
+            </h1>
+            
+            <div class="space-y-8">
+                <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-md border border-white/10">
+                    <h2 class="text-3xl font-bold text-cyan-400 mb-4">System Requirements</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-3">Minimum Requirements</h3>
+                            <ul class="space-y-2 text-gray-300">
+                                <li>• 64-bit processor</li>
+                                <li>• 2GB RAM (4GB+ recommended)</li>
+                                <li>• 20GB free disk space</li>
+                                <li>• UEFI or Legacy BIOS support</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-3">Recommended</h3>
+                            <ul class="space-y-2 text-gray-300">
+                                <li>• Multi-core x86_64 processor</li>
+                                <li>• 8GB+ RAM</li>
+                                <li>• 50GB+ SSD storage</li>
+                                <li>• Dedicated graphics card</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-md border border-white/10">
+                    <h2 class="text-3xl font-bold text-cyan-400 mb-4">Download & Verification</h2>
+                    <div class="space-y-4 text-gray-300 text-lg">
+                        <p><strong>Current Status:</strong> ISO under brief reconstruction</p>
+                        <p>1. Download Xray_OS ISO from <a href="https://sourceforge.net/projects/xray-os/" class="text-cyan-400 hover:underline">SourceForge</a></p>
+                        <p>2. Verify the download integrity (checksums provided on download page)</p>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-md border border-white/10">
+                    <h2 class="text-3xl font-bold text-cyan-400 mb-4">Creating Installation Media</h2>
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-3">Using Rufus (Windows)</h3>
+                            <ol class="space-y-2 text-gray-300 list-decimal list-inside">
+                                <li>Download Rufus from official website</li>
+                                <li>Insert USB drive (8GB+ recommended)</li>
+                                <li>Select Xray_OS ISO file</li>
+                                <li>Choose GPT partition scheme for UEFI</li>
+                                <li>Click "Start" to create bootable USB</li>
+                            </ol>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-semibold text-white mb-3">Using dd (Linux/macOS)</h3>
+                            <div class="bg-gray-900 p-4 rounded-lg font-mono text-sm">
+                                <code class="text-cyan-400"># Replace /dev/sdX with your USB device</code><br>
+                                <code class="text-white">sudo dd if=xray-os-2024.1.iso of=/dev/sdX bs=4M status=progress</code><br>
+                                <code class="text-white">sync</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-md border border-white/10">
+                    <h2 class="text-3xl font-bold text-cyan-400 mb-4">Installation Process</h2>
+                    <div class="space-y-4 text-gray-300 text-lg">
+                        <h3 class="text-xl font-semibold text-white">Boot from Installation Media</h3>
+                        <ol class="space-y-2 list-decimal list-inside">
+                            <li>Insert bootable USB into target computer</li>
+                            <li>Boot from USB (may require changing boot order in BIOS/UEFI)</li>
+                            <li>Select "Install Xray_OS" from boot menu</li>
+                        </ol>
+                        
+                        <h3 class="text-xl font-semibold text-white mt-6">Installation Steps</h3>
+                        <ol class="space-y-2 list-decimal list-inside">
+                            <li><strong>Language Selection</strong> - Choose your preferred language</li>
+                            <li><strong>Keyboard Layout</strong> - Select keyboard layout</li>
+                            <li><strong>Network Configuration</strong> - Configure internet connection</li>
+                            <li><strong>Disk Partitioning</strong> - Choose automatic or manual partitioning</li>
+                            <li><strong>User Account</strong> - Create your user account and set password</li>
+                            <li><strong>System Configuration</strong> - Configure timezone, hostname</li>
+                            <li><strong>Package Selection</strong> - Choose additional software packages</li>
+                            <li><strong>Installation</strong> - Wait for system installation to complete</li>
+                            <li><strong>Reboot</strong> - Remove installation media and reboot</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="docs.html" class="inline-block px-8 py-4 bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-semibold rounded-lg hover:scale-105 transition-all duration-300">
+                    Back to Documentation
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
