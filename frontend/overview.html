@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xray_OS Overview</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-black text-white font-['Inter']">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black/95 backdrop-blur-md z-50 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-8 py-4 flex justify-between items-center">
+            <div class="flex items-baseline gap-2">
+                <a href="index.html" class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Xray_OS</a>
+                <span class="text-gray-400 font-light">Linux</span>
+            </div>
+            <ul class="flex gap-8 list-none">
+                <li><a href="index.html" class="text-white hover:text-cyan-400 transition-colors duration-300">Home</a></li>
+                <li><a href="index.html#features" class="text-white hover:text-cyan-400 transition-colors duration-300">Features</a></li>
+                <li><a href="index.html#download" class="text-white hover:text-cyan-400 transition-colors duration-300">Download</a></li>
+                <li><a href="docs.html" class="text-cyan-400">Docs</a></li>
+                <li><a href="#community" class="text-white hover:text-cyan-400 transition-colors duration-300">Community</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <section class="min-h-screen pt-24 pb-16 bg-gradient-to-br from-slate-800/20 via-black to-black">
+        <div class="max-w-4xl mx-auto px-8">
+            <h1 class="text-5xl font-bold mb-8 bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                Project Overview
+            </h1>
+            
+            <div class="prose prose-invert max-w-none">
+                <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-md border border-white/10 mb-8">
+                    <h2 class="text-3xl font-bold text-cyan-400 mb-4">What is Xray_OS?</h2>
+                    <p class="text-gray-300 text-lg leading-relaxed mb-6">
+                        <strong>Note: The ISO is currently under brief reconstruction. Xray_OS is back!</strong>
+                    </p>
+                    <p class="text-gray-300 text-lg leading-relaxed">
+                        Xray_OS is a personal Arch Linux-based distribution created for personal use - it's not intended as a competitor to other distributions. This is a curated system with custom tools and fixes for specific use cases.
+                    </p>
+                </div>
+
+                <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-md border border-white/10 mb-8">
+                    <h2 class="text-3xl font-bold text-cyan-400 mb-4">Key Features</h2>
+                    <ul class="space-y-4 text-gray-300 text-lg">
+                        <li class="flex items-start gap-3">
+                            <span class="text-cyan-400 text-2xl">🛠️</span>
+                            <div>
+                                <strong>Custom AUR Helper</strong> - tolito-AUR-helper with curated PKGBUILDs and AUR fallback
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-cyan-400 text-2xl">📦</span>
+                            <div>
+                                <strong>Curated Packages</strong> - Fixed and improved PKGBUILDs for broken AUR packages
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-cyan-400 text-2xl">🎨</span>
+                            <div>
+                                <strong>Custom Wallpapers</strong> - Original Xray_OS wallpapers (not sourced from elsewhere)
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-cyan-400 text-2xl">🖥️</span>
+                            <div>
+                                <strong>Smart GPU Detection</strong> - Automatically detects and removes unused GPU drivers during installation
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-cyan-400 text-2xl">🎬</span>
+                            <div>
+                                <strong>DaVinci Resolve Support</strong> - Easy installation via tolito-AUR-helper without errors
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-cyan-400 text-2xl">📋</span>
+                            <div>
+                                <strong>Tolitica Welcome App</strong> - Custom welcome application with useful system options
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white/5 p-8 rounded-2xl backdrop-blur-md border border-white/10">
+                    <h2 class="text-3xl font-bold text-cyan-400 mb-4">Important Notes</h2>
+                    <ul class="space-y-3 text-gray-300 text-lg">
+                        <li>• This is a <strong>personal ISO</strong> created for personal use</li>
+                        <li>• <strong>Not a commercial competitor</strong> to other distributions</li>
+                        <li>• GPU driver detection feature needs adjustments - use with caution</li>
+                        <li>• Xray_OS branding will become optional in future Tolitica versions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="docs.html" class="inline-block px-8 py-4 bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-semibold rounded-lg hover:scale-105 transition-all duration-300">
+                    Back to Documentation
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
