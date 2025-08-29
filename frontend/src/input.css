@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles for inline replacements */
+.icon-margin { margin-right: 1rem; }
+.italic-text { font-style: italic; }
+.margin-top-8 { margin-top: 8rem; }
+.animation-delay-1 { animation-delay: 1s; }
+.animation-delay-2 { animation-delay: 2s; }
+.animation-delay-05 { animation-delay: 0.5s; }
+.animation-delay-15 { animation-delay: 1.5s; }
+.icon-32 { width: 32px; height: 32px; }
+.icon-37 { width: 32px; height: 37px; }
+.icon-50 { width: 50px; height: 50px; }
+.margin-top-2 { margin-top: 2rem; }
+
+/* Custom scrollbar */
+.scrollbar-custom::-webkit-scrollbar {
+  height: 8px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background: rgba(24, 232, 236, 0.6);
+  border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background: rgba(24, 232, 236, 0.8);
+}
